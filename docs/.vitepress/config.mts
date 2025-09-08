@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "WD Database",
-  description: "Database for all useful resssources",
+  title: 'WD Database',
+  description: 'Database for all useful resssources',
+  base: '/wd-database/',
   themeConfig: {
     nav: [
       { text: '📖 Glossary', link: 'https://rentry.org/The-Piracy-Glossary' },
