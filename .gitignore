@@ -1,5 +1,5 @@
-docs/.vitepress/dist
-docs/.vitepress/cache
+docs\.vitepress\dist
+docs\.vitepress\cache
 node_modules
 *.log*
 .nitro
@@ -8,5 +8,5 @@ node_modules
 .env
 dist
 .eslintcache
-docs/.vitepress/.temp
+docs\.vitepress\.temp
 result
