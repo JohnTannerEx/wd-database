@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { iconReplacerPlugin } from './theme/icontransformer'
 
 export default defineConfig({
-  title: 'WD Database',
+  title: 'AV Database',
   description: 'Database for all useful resssources',
   base: '/wd-database/',
   themeConfig: {
@@ -16,28 +17,6 @@ export default defineConfig({
         items: [
           { text: '🌐 Search', link: '/posts/search' },
           { text: '🔖 Bookmarks', link: 'https://github.com/fmhy/bookmarks' },
-          { text: '✅ SafeGuard', link: 'https://github.com/fmhy/FMHY-SafeGuard' },
-          { text: '🚀 Startpage', link: 'https://fmhy.net/startpage' },
-          { text: '📋 snowbin', link: 'https://pastes.fmhy.net' },
-          {
-            text: '®️ Redlib',
-            link: 'https://redlib.fmhy.net/r/FREEMEDIAHECKYEAH/wiki/index'
-          },
-          { text: '🔎 SearXNG', link: 'https://searx.fmhy.net/' },
-          {
-            text: '💡 Site Hunting',
-            link: 'https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/find-new-sites/'
-          },
-          { text: '❓ FAQs', link: 'https://redd.it/xrxen7' },
-          {
-            text: '😇 SFW FMHY',
-            link: 'https://rentry.org/piracy'
-          },
-          {
-            text: '🏠 Selfhosting',
-            link: '/other/selfhosting'
-          },
-          { text: '🏞 Wallpapers', link: '/other/wallpapers' },
           { text: '💙 Feedback', link: '/feedback' }
         ]
       }
@@ -56,6 +35,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '⭐ Adblocking', link: '/privacy' },
+          { text: '⭐ OBS Plugins', link: '/obs' },
           { text: '⭐ Markdown Examples', link: '/markdown-examples' },
           { text: '⭐ Runtime API Examples', link: '/api-examples' }
         ]
@@ -82,7 +62,12 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path'
+      pattern: 'https://github.com/JohnTannerEx/wd-database/edit/main/docs'
     }
+  },
+  vite:{
+    plugins: [
+      iconReplacerPlugin(),
+    ]
   }
 })

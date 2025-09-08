@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "consola": "^3.4.2",
     "sass": "^1.92.1",
     "vitepress": "^2.0.0-alpha.12"
   },
@@ -15,7 +16,6 @@
   "directories": {
     "doc": "docs"
   },
-  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
