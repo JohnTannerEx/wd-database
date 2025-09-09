@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { iconReplacerPlugin } from './theme/icontransformer'
+import { mdIconPlugin } from './theme/utils/icontransformer'
 
 export default defineConfig({
   title: 'AV Database',
@@ -8,12 +8,8 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '📖 Glossary', link: 'https://rentry.org/The-Piracy-Glossary' },
-      {
-        text: '💾 Backups',
-        link: 'https://github.com/fmhy/FMHY/wiki/Backups'
-      },
-      {
-        text: '🌱 Ecosystem',
+      { text: '💾 Backups', link: 'https://github.com/fmhy/FMHY/wiki/Backups' },
+      { text: '🌱 Ecosystem',
         items: [
           { text: '🌐 Search', link: '/posts/search' },
           { text: '🔖 Bookmarks', link: 'https://github.com/fmhy/bookmarks' },
@@ -31,17 +27,17 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Ressources',
         collapsed: false,
         items: [
-          { text: '⭐ Adblocking', link: '/privacy' },
-          { text: '⭐ OBS Plugins', link: '/obs' },
+          { text: '_GITHUB_ Logiciels', link: '/privacy' },
+          { text: '_OBS_ OBS Plugins', link: '/obs' },
           { text: '⭐ Markdown Examples', link: '/markdown-examples' },
           { text: '⭐ Runtime API Examples', link: '/api-examples' }
         ]
       },
       {
-        text: 'Examples',
+        text: 'Manuels',
         collapsed: false,
         items: [
           {
@@ -67,7 +63,7 @@ export default defineConfig({
   },
   vite:{
     plugins: [
-      iconReplacerPlugin(),
+      mdIconPlugin(),
     ]
   }
 })
